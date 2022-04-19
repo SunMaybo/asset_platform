@@ -1,0 +1,21 @@
+server:
+  port: 8181
+spring:
+  sleuth:
+    grpc:
+      enabled: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://127.0.0.1:8849
+        enabled: true
+        namespace: 7d064d60-1cd0-4fc4-8637-a5fb6cfca57a
+        cluster-name: default_test
+        group: format
+        register-enabled: false
+grpc:
+  client:
+    greeter-service:
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext

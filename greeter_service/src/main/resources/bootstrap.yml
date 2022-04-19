@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: greeter-service
+  cloud:
+    nacos:
+      config:
+        server-addr: http://127.0.0.1:8849
+        enabled: true
+        namespace: 7d064d60-1cd0-4fc4-8637-a5fb6cfca57a
+        file-extension: yaml
+        refresh-enabled: false
